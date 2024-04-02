@@ -1,3 +1,7 @@
+body {
+  @apply bg-bg-app;
+  @apply text-white-app;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

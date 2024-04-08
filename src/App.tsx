@@ -1,15 +1,30 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
+import { motion } from "framer-motion";
 import Navbar from "./components/nav-bar/Navbar";
+import { useEffect, useState } from "react";
+import Error from "./components/error/Error";
 
 function App() {
+  const [animateIn, setAnimateIn] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimateIn(true);
+    }, 500);
+  }, []);
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0, y: 20 }}
+      animate={animateIn ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5 }}
+    >
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-    </main>
+    </motion.main>
   );
 }
 

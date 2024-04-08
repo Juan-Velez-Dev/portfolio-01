@@ -1,6 +1,7 @@
 body {
   @apply bg-bg-app;
   @apply text-white-app;
+  @apply font-JetBrains;
 }
 @tailwind base;
 @tailwind components;

@@ -4,7 +4,7 @@ import Social from "../common/Social";
 
 export default function Home() {
   return (
-    <div className=" text-center lg:flex md:flex-col xl:flex xl:flex-row-reverse xl:gap-9 p-28 bg-bg-nav w-[85%] relative top-20 m-auto rounded-xl shadow-lg   ">
+    <div className=" text-center lg:flex md:flex-col xl:flex xl:flex-row-reverse xl:gap-9 p-10 xl:p-28 bg-bg-nav w-[85%] relative top-10 xl:top-20 m-auto rounded-xl shadow-lg   ">
       <img className="w-[63%] max-w-md m-auto" src={profileImage} alt="" />
       <div>
         <h3 className="pt-3 text-4xl md:text-5xl font-bold xl:text-left">

@@ -14,6 +14,7 @@ export default {
       "icon-white-app": "#D9D9D9",
     },
     screens: {
+      'sm': '375px',
       "md": "768px",
       "lg": "1024px",
       "xl": "1280px",

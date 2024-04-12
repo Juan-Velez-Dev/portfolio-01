@@ -16,7 +16,7 @@ export default {
       "icon-wite-hover": "#E7E7E7",
       "icon-wite-active": "#BCBCBC",
       "btn-yellow": "#F4CE14",
-      "btn-yellow-hover": "#FFD400",
+      "btn-yellow-hover": "#DDB800",
       "btn-yellow-active": "#DDB800"
     },
     screens: {

@@ -1,6 +1,7 @@
 import profileImage from "../../assets/profile-photo.png";
-import Button from "../common/Button";
+import Button from "../common/button/Button";
 import Social from "../common/Social";
+import { buttonTexts } from "../common/button/button-string/button-string";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         {/* Contact info */}
         <section className="">
           <Social />
-          <Button />
+          <div className="flex items-center justify-center ">
+            <Button buttonString={buttonTexts.contact} />
+          </div>
         </section>
       </div>
     </div>

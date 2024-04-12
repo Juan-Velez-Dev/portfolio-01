@@ -7,11 +7,17 @@ export default {
   ],
   theme: {
     colors: {
-      "bg-nav": "#45474B",
-      "bg-app": "#262729",
-      "white-app": "#F5F7F8",
-      "yellow-app": "#F4CE14",
-      "icon-white-app": "#D9D9D9",
+      "bg-gray": "#45474B",
+      "bg-black": "#262729",
+      "text-white": "#F5F7F8",
+      "text-black": "#262729",
+      "text-yellow": "#F4CE14",
+      "icon-white": "#D9D9D9",
+      "icon-wite-hover": "#E7E7E7",
+      "icon-wite-active": "#BCBCBC",
+      "btn-yellow": "#F4CE14",
+      "btn-yellow-hover": "#FFD400",
+      "btn-yellow-active": "#DDB800"
     },
     screens: {
       'sm': '375px',
@@ -20,7 +26,12 @@ export default {
       "xl": "1280px",
     },
     fontFamily:{
-      "JetBrains": "JetBrains Mono, monospace"
+      "jet-brains": "JetBrains Mono, monospace",
+      "fira-code": "FiraCode Mono, monospace",
+      "fira-code-semibold": ["FiraCode Mono, monospace", "semibold"],
+      "fira-code-medium": ["FiraCode Mono, monospace", "medium"],
+      "fira-code-bold": ["FiraCode Mono, monospace", "bold"],
+      "jet-brains-extrabold": ["JetBrains Mono, monospace", "extrabold"]
     },
     extend: {},
   },

@@ -14,8 +14,9 @@ export default function Navbar() {
     setBurguer(!burguer);
   };
 
+  //! El hijo es el absolute position
   return (
-    <nav className="">
+    <nav className="flex relative w-[80%] bg-bg-nav justify-between p-9 rounded-md m-auto">
       {/* ----- Logo in NavBar -----  */}
 
       <section className="">
@@ -50,7 +51,7 @@ export default function Navbar() {
             transition: { duration: 0.2 },
           }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className=""
+          className="absolute"
         >
           <li>
             <NavLink

@@ -12,6 +12,7 @@ function App() {
     setTimeout(() => {
       setAnimateIn(true);
     }, 500);
+    9898;
   }, []);
   return (
     <motion.main
@@ -19,7 +20,9 @@ function App() {
       animate={animateIn ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
-      <Navbar />
+      <div className="fixed w-full justify-center">
+        <Navbar />
+      </div>
       <Routes>
         <Route index element={<Home />} />
         <Route path="*" element={<Error />} />

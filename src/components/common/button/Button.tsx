@@ -1,5 +1,5 @@
-import { buttonHrefCreate } from "./helpers/button-href-create";
-import { buttonStringCreate } from "./helpers/button-string-create";
+import { buttonHrefCreate } from "./utils/button-href-create";
+import { buttonStringCreate } from "./utils/button-string-create";
 
 export default function Button({ buttonString }: { buttonString: string }) {
   return (

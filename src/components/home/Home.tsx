@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Contact info */}
         <section className="">
-          <div className="flex flex-col gap-3 items-center justify-center ">
+          <div className="flex flex-col gap-3 items-center justify-center">
             <Social />
             <Button buttonString={buttonTexts.contact} />
           </div>

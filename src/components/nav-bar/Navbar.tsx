@@ -1,33 +1,15 @@
-import xIcon from "../../assets/x-icon-nav.svg";
-import menuIcon from "../../assets/menu-icon-nav.svg";
-import { useState } from "react";
-import { showHamburguerMenu } from "./utils/showHamburguerMenu";
+import HamburguerMenu from "./HamburguerMenu";
 export default function Navbar() {
-  const [hamburguerMenu, setHamburguerMenu] = useState(true);
   //! El hijo es el absolute position
   return (
-    <nav className="grid m- shadow-md content-center justify-items-center bg-bg-gray bg-bg-nav justify-between  rounded-b-md m-auto">
+    <nav className="grid grid-flow-col pl-7 h-16 pr-7 shadow-md content-center justify-items-center bg-bg-gray bg-bg-nav justify-between rounded-b-md m-auto">
       {/* ----- Logo in NavBar -----  */}
 
-      <p className="text-text-white font-jet-brains-extrabold tracking-widest p-3">{`Juan Velez`}</p>
-      <button
-        onClick={() => showHamburguerMenu(hamburguerMenu, setHamburguerMenu)}
-      >
-        {hamburguerMenu ? (
-          <img src={menuIcon} alt="" />
-        ) : (
-          <img src={xIcon} alt="" />
-        )}
-      </button>
-      <div className="absolute top-24 text-center bg-btn-yellow w-[75%] ">
-        <ul className="relative text-text-white hover:text-text-yellow hover:cursor-pointer hover:underline">
-          <li>Inicio</li>
-          <li>Proyectos</li>
-          <li>Sobre mi</li>
-        </ul>
-      </div>
-
+      <p className="text-text-white text-xl font-jet-brains-extrabold tracking-widest p-3">{`Juan Velez`}</p>
       {/* ----- Menu Hamburguer -----  */}
+      <div className="pt-2">
+        <HamburguerMenu />
+      </div>
     </nav>
   );
 }
